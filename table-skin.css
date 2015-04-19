@@ -1,0 +1,43 @@
+/* 
+   #table--globals
+   ========================================================================== */
+
+/**
+ * Define all repeating rules in one place. 
+ */
+
+.bare-table--cells th,
+.bare-table--cells td,
+.bare-table--rows td {
+	border-color: #ccc;
+}
+
+/* 
+   #table--zebra
+   ========================================================================== */
+
+/**
+ * The table--zebra modifier applies alternative-row background colors.
+ *
+ * <table class="bare-table bare-table--zebra">
+ *     <thead>
+ *         <tr>
+ *             <th></th>
+ *             <th></th>
+ *             <th></th>
+ *         </tr>
+ *     </thead>
+ *     <tbody>
+ *         <tr>
+ *             <td></td>
+ *             <td></td>
+ *             <td></td>
+ *         </tr>
+ *     </tbody>
+ * </table>
+ */
+
+.bare-table > tbody tr:nth-child(2n-1) td {
+    background-color: #f2f2f2;
+}
+

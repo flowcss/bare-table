@@ -1,0 +1,20 @@
+{
+  "name": "bare-table",
+  "version": "0.1.0",
+  "authors": [
+    "Eric-Harms <modularmade.css@gmail.com>"
+  ],
+  "description": "The table object is used to create tables with minimal table-styles.",
+  "main": "table-core.css",
+  "keywords": [
+    "Css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,100 @@
+/* 
+   #table
+   ========================================================================== */
+
+/**
+ * The table object is used to create tables with minimal table-styles.
+ *
+ * <table class="bare-table">
+ *     <thead>
+ *         <tr>
+ *             <th></th>
+ *             <th></th>
+ *             <th></th>
+ *         </tr>
+ *     </thead>
+ *     <tbody>
+ *         <tr>
+ *             <td></td>
+ *             <td></td>
+ *             <td></td>
+ *         </tr>
+ *     </tbody>
+ * </table>
+ */
+
+.bare-table {
+	width: 100%;
+}
+
+	.bare-table thead {
+		text-align: left;
+	}
+
+		.bare-table th,
+		.bare-table td {
+			padding: .75em 1.5em;
+		}
+
+/* 
+   #table--cells
+   ========================================================================== */
+
+/**
+ * The table--cells modifier adds a border around table cells.
+ *
+ * <table class="bare-table bare-table--cells">
+ *     <thead>
+ *         <tr>
+ *             <th></th>
+ *             <th></th>
+ *             <th></th>
+ *         </tr>
+ *     </thead>
+ *     <tbody>
+ *         <tr>
+ *             <td></td>
+ *             <td></td>
+ *             <td></td>
+ *         </tr>
+ *     </tbody>
+ * </table>
+ */
+
+.bare-table--cells th,
+.bare-table--cells td {
+	border: 1px solid;
+}
+
+/* 
+   #table--rows
+   ========================================================================== */
+
+/**
+ * The table--rows modifier adds a border around table rows.
+ *
+ * <table class="bare-table bare-table--rows">
+ *     <thead>
+ *         <tr>
+ *             <th></th>
+ *             <th></th>
+ *             <th></th>
+ *         </tr>
+ *     </thead>
+ *     <tbody>
+ *         <tr>
+ *             <td></td>
+ *             <td></td>
+ *             <td></td>
+ *         </tr>
+ *     </tbody>
+ * </table>
+ */
+
+ /**
+  * Don't use this with table--cells. Undoing styles increases the size.
+  */
+ 
+.bare-table--rows td {
+    border-top: 1px solid;
+}
